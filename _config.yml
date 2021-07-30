@@ -1,0 +1,105 @@
+# Site
+repository: psi9730/moder-resume
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 박승일
+title: web programmer
+email: psi9730@gmail.com
+website: psi9730.github.io/moder-resume/
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username:  psi9730
+
+# about_title: About Me
+about_profile_image: images/profile.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  I am most skilled in: <mark>react.js</mark>, <mark>typescript</mark>, <mark>redux-saga</mark>, <mark>story-book</mark>, <mark>jest</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 뉴스 컨텐츠 플랫폼 개발(React, React Native)
+        link: https://play.google.com/store/apps/details?id=com.bytereactnative
+        # link_text: Project Website
+        description: | # this will include new lines to allow paragraphs
+          테크, 비즈니스, 트렌드와 관련해서 흥미롭고 트렌디한 뉴스를 쉽게 제공하는 플랫폼을 개발하고자, 대학교 동기들과 함께 프로젝트를 진행했습니다.
+          <mark>React.js</mark>, <mark>styled-component</mark>, <mark>AWS ec2</mark>, <mark>route53</mark>을 이용하여 소비자 반응을 알기 위한 웹 프로젝트를 배포하였습니다.
+          어드민 페이지는 react-admin을 이용하여 컨텐츠 관리를 하고 있습니다.
+          현재는 <mark>React-Native</mark>, <mark>typescript</mark>, <mark>styled-component</mark> 기반으로 앱 개발을 진행중입니다.
+
+      - layout: left
+        title: Naver AI Hackathon 2019 speech
+        quote: >
+          새로운 목표를 가지게 해주었던 AI hackathon, speech에 대한 이해와 동시에 함께하는 코딩의 재미를 알게해준 해준 시간이었습니다.
+        description: | # this will include new lines to allow paragraphs
+          실제 한국어 전화 DB를 이용한 음성인식을 주제로 약 한달간 해커톤을 진행했습니다. <mark>Seq2Seq model</mark>을 기반으로 모델을 학습시켰으며, 최종 순위 9등으로 해커톤을 마쳤습니다.
+          <br>(NAVER_AI_SPEECH)<https://github.com/psi9730/naver_ai_hackathon_speech>
+
+      - layout: left
+        title: 건양대학교 안저이미지 분류 해커톤
+        description: | # this will include new lines to allow paragraphs
+          4000장의 안저 이미지를 분석해, 정상, 황반 변성, 당뇨성망막병증, 망막정맥폐쇄 classification task를 수행. keras sequential모델로 코드를 작성하였으며, VGGNET model을 base로 classification을 했습니다. 94.5% accuracy로 대상(1등)을 수상하였습니다.
+          <br>(FUNDUS_CLASSIFICATION)<https://github.com/psi9730/Konyang-Health-Datatathon-2019>
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 마켓잇-산업기능요원
+        link: https://marketit.asia/
+        sub_title: web programmer, deep learning engineer
+        caption: 2018년 11월 - 2020년 3월
+        description: | # this will include new lines to allow paragraphs
+          회사내부툴 개발(angular.js), 공구마켓 쇼핑몰 웹 개발(vue.js), 서버 API 개발(php), CAFE24 리뷰 플러그인 개발(jquery) php, 사내 딥러닝 프로젝트 진행(tensorflow)
+      - layout: left
+        title: 스타일쉐어-산업기능요원
+        link: https://www.styleshare.kr/
+        sub_title: web programmer, growth hacker
+        caption: 2020년 3월 - 2021년 2월
+        description: | # this will include new lines to allow paragraphs
+          그로스해커 프론트 엔지니어로써, Google Optimize, Google Tag manager, Braze 실험 환경 위에서 앱, 웹 서비스 향상을 위한 실험을 기획, 배포하는 역할을 맡았습니다.
+          실험은 환경에 따라, vanilla js, jquery, react.js, typescript을 이용하여 작업하였습니다.
+          Big query, metabase, hotjar를 이용하여 실험분석 및 설계를 진행하였습니다.
+          <br>(쇼핑유형분석)<https://experiment.styleshare.kr/p/season-off-2020-summer/product/#/>
+          <br>(스타일 추천 페이지)<https://experiment.styleshare.kr/p/recommend-onboarding/#/>
+
+      - layout: left
+        title: 채널톡-산업기능요원(복무중)
+        link: https://desk.channel.io/
+        sub_title: web programmer
+        caption: 2020년 2월 - 현재
+        description: | # this will include new lines to allow paragraphs
+          react.js, typescript, redux-saga 기반으로, 채널톡 서비스 전반의 유지보수 및 개선을 진행하고있습니다.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 하나고등학교 - 졸업
+        caption: 2013 - 2016
+      - layout: left
+        title:  서울대학교 - 휴학
+        caption: 2016 - 현재
+        description: 컴퓨터공학과
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
