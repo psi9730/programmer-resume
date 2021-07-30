@@ -1,5 +1,5 @@
 # Site
-repository: psi9730/moder-resume
+repository: psi9730/programmer-resume
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -9,7 +9,7 @@ version: 2
 name: 박승일
 title: web programmer
 email: psi9730@gmail.com
-website: psi9730.github.io/moder-resume/
+website: https://psi9730.github.io/programmer-resume/
 
 # Dark Mode (true/false/never)
 darkmode: false
